@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "youtube key bind",
+  "version": "1.0",
+  "description": "key binding to youtube video player",
+  "permissions": ["http://www.youtube.com/", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["jquery-3.2.1.min.js", "myscript.js"]
+    }
+  ]
+}
